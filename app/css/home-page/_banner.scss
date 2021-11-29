@@ -1,0 +1,78 @@
+#banner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    z-index: -1;
+    .text_titel {
+        width: 50%;
+        margin: auto;
+        filter: drop-shadow(-37px 13px 3px #000000);
+        .banner_titel {
+            text-align: left;
+            transform-style: preserve-3d;
+            transition: 2s;
+            opacity: 0.1;
+            transform: translate3d(120px, 0%, 0em);
+            &._active {
+                opacity: 1;
+                transform: translate3d(0px, 0%, 3em);
+            }
+            @media (max-width: 968px) {
+                &._active {
+                    transform: translate3d(-50px, 0%, 3em);
+                }
+            }
+            @media (max-width: 786px) {
+                &._active {
+                    transform: translate3d(-70px, 0%, 3em);
+                }
+            }
+        }
+        .banner_text {
+            transform-style: preserve-3d;
+            transition: all 3s ease 0.5s;
+            opacity: 0.1;
+            transform: translate3d(150px, 0%, 3em);
+            &._active {
+                opacity: 1;
+                transform: translate3d(0px, 0%, 3em);
+            }
+            @media (max-width: 968px) {
+                &._active {
+                    transform: translate3d(-50px, 0%, 3em);
+                }
+            }
+            @media (max-width: 786px) {
+                &._active {
+                    transform: translate3d(-70px, 0%, 3em);
+                }
+            }
+        }
+        &._active {
+            filter: drop-shadow(8px 7px 4px #000000);
+        }
+    }
+    .img_block {
+        width: 50%;
+        height: 100vh;
+        position: a;
+        bottom: 0;
+        left: 0;
+        background-image: url("../img/home-page/banner-img.png");
+        background-size: cover;
+        background-position: right;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        transition: all 2s ease 0.5s;
+        opacity: 0.3;
+        filter: blur(10px) drop-shadow(15px 6px 4px #000000);
+        &._active {
+            opacity: 1;
+            filter: blur(1px) drop-shadow(0px 2px 28px #000000);
+        }
+    }
+}

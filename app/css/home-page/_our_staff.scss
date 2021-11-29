@@ -1,0 +1,113 @@
+#our_staff {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-image: url("../img/home-page/bg_block.png");
+    background-size: auto;
+    padding: 80px 0 80px 0;
+    box-shadow: 0px 0px 20px 1px #000000;
+    z-index: 9;
+    .titel {
+        position: absolute;
+        top: -39%;
+        filter: drop-shadow(8px 7px 4px #000000);
+    }
+    .slider_box {
+        width: 100%;
+        height: 70vh;
+        .center {
+            max-width: 1200px;
+            margin: auto;
+            .slick-slide {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                text-align: center;
+                position: relative;
+                height: 75vh;
+                .image {
+                    max-width: 300px;
+                    height: 329px;
+                    background-image: url("../img/home-page/staff/staff-image-bg.jpg");
+                    background-size: cover;
+                    box-shadow: 0px 0px 20px 1px #000000;
+                    z-index: 2;
+                    img {
+                        width: auto;
+                        height: 100%;
+                        z-index: 1;
+                    }
+                }
+                .staff_name {
+                    width: 300px;
+                    height: 60px;
+                    text-align: center;
+                    line-height: 1.2;
+                    bottom: 0px;
+                    left: 0px;
+                    filter: drop-shadow(8px 7px 4px #000000);
+                    z-index: 10;
+                }
+                @media (max-width: 1450px) {
+                    .staff_name {
+                        bottom: -80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    #our_staff {
+        width: 100vw;
+        height: 100vh;
+        .titel {
+            top: -35%;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    #our_staff {
+        height: 94vh;
+        .titel {
+            top: -38%;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) and (max-height: 500px) {
+    #our_staff {
+        height: 92vh;
+        .titel {
+            font-size: 36px;
+            top: -38%;
+        }
+        .slider_box {
+            .center {
+                max-width: 500px;
+                margin-top: 20px;
+                .slick-slide {
+                    height: 65vh;
+                    .image {
+                        max-width: 150px;
+                        height: 179px;
+                    }
+                    .staff_name {
+                        width: 200px;
+                        height: 40px;
+                        font-family: 'Philosopher', sans-serif;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

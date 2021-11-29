@@ -1,0 +1,148 @@
+@keyframes topBar_open {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+        width: 100%;
+    }
+    10% {
+        transform: translateY(-8px) rotate(0deg);
+        width: 100%;
+    }
+    50% {
+        transform: translateY(25px) rotate(45deg);
+        width: 140%;
+    }
+    75% {
+        transform: translateY(12px) rotate(45deg);
+        width: 140%;
+    }
+    100% {
+        transform: translateY(17px) rotate(45deg);
+        width: 140%;
+    }
+}
+
+@keyframes bottomBar_open {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+        width: 100%;
+    }
+    10% {
+        transform: translateY(-8px) rotate(0deg);
+        width: 100%;
+    }
+    60% {
+        transform: translateY(0px) rotate(-45deg);
+        width: 140%;
+    }
+    75% {
+        transform: translateY(-10px) rotate(-45deg);
+        width: 140%;
+    }
+    100% {
+        transform: translateY(-8px) rotate(-45deg);
+        width: 140%;
+    }
+}
+
+@keyframes menuLabel_open {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(-18px);
+    }
+    45% {
+        transform: translateY(44px);
+        opacity: 1;
+    }
+    48% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+
+@keyframes topBar_close {
+    0% {
+        transform: translateY(17px) rotate(45deg);
+        width: 140%;
+    }
+    35% {
+        transform: translateY(-8px) rotate(-4deg);
+        width: 100%;
+    }
+    53% {
+        transform: translateY(10px) rotate(3deg);
+        width: 100%;
+    }
+    70% {
+        transform: translateY(-6px) rotate(0deg);
+        width: 100%;
+    }
+    100% {
+        transform: translateY(-2px) rotate(0deg);
+        width: 100%;
+    }
+}
+
+@keyframes bottomBar_close {
+    0% {
+        transform: translateY(-8px) rotate(-45deg);
+        width: 140%;
+    }
+    35% {
+        transform: translateY(-18px) rotate(6deg);
+        width: 100%;
+    }
+    53% {
+        transform: translateY(0px) rotate(-3deg);
+        width: 100%;
+    }
+    68% {
+        transform: translateY(-7px) rotate(0deg);
+        width: 100%;
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+        width: 100%;
+    }
+}
+
+@keyframes menuLabel_close {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    5% {
+        transform: translateY(25px);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+    37% {
+        transform: translateY(-22px);
+        opacity: 1;
+    }
+    45% {
+        transform: translateY(-22px);
+        opacity: 1;
+    }
+    58% {
+        transform: translateY(8px) rotate(-10deg);
+        opacity: 1;
+    }
+    83% {
+        transform: translateY(-6px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

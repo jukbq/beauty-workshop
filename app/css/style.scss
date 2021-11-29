@@ -1,0 +1,94 @@
+/*
+1 - Basic styles
+2 - Header styles
+    Burger animation
+3 - Homepage styles - Banner section
+4 - Homepage styles - About Us section 
+5 - Homepage styles - Services section
+6 - Homepage styles - Our staff section 
+7 - Homepage styles - Gallery section 
+8 - Homepage styles - Link blocks
+9 - Other pages -   Banner section
+10 - About us page
+11 - Service Pages
+12 - Staff page
+13 -  Gallery page
+14 - Footer styles
+*/
+
+
+/*Basic styles
+================*/
+
+@import 'home-page/basic-styles';
+
+/*Header styles
+===============*/
+
+@import 'home-page/header';
+
+/* Burger animation
+====================*/
+
+@import 'home-page/animation';
+
+/*  Homepage styles - Banner section
+=====================================*/
+
+@import 'home-page/banner';
+
+/* Homepage styles - About Us section 
+====================================*/
+
+@import 'home-page/about_us';
+
+/* Homepage styles - Services section
+=====================================*/
+
+@import 'home-page/services';
+
+/* Homepage styles - Our staff section 
+====================================*/
+
+@import 'home-page/our_staff';
+
+/* Homepage styles - Gallery section 
+====================================*/
+
+@import 'home-page/gallery';
+
+/* Homepage styles - Link blocks
+=================================*/
+
+@import 'home-page/links';
+
+/* Other pages -   Banner section
+=================================*/
+
+@import 'other-pages/banner';
+
+/* About us page
+===============*/
+
+@import 'other-pages/about_us';
+
+/* Service Pages
+================*/
+
+@import 'other-pages/services';
+
+/* Staff page
+=============*/
+
+@import 'other-pages/staff';
+
+/* Gallery page
+===============*/
+
+@import 'other-pages/gallery';
+
+/* Footer styles
+===============*/
+
+@import 'home-page/footer';
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');

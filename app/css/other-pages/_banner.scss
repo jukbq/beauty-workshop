@@ -1,0 +1,64 @@
+#other_pages_banner {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("../img/home-page/bg_block.png");
+    box-shadow: 0px 0px 20px 1px #000000;
+    z-index: 10;
+    .text_titel {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        filter: drop-shadow(-37px 13px 3px #000000);
+        .banner_titel {
+            transform-style: preserve-3d;
+            transition: 1.2s cubic-bezier(0, 0.49, 1, 1) 0s;
+            opacity: 0.1;
+            transform: translate3d(120px, 0%, 0em);
+            &._active {
+                opacity: 1;
+                transform: translate3d(0px, 0%, 3em);
+            }
+        }
+        .banner_text {
+            transform-style: preserve-3d;
+            transition: all 1.5s cubic-bezier(0, 0.49, 1, 1) 0s;
+            opacity: 0.1;
+            transform: translate3d(298px, 0%, 3em);
+            &._active {
+                opacity: 1;
+                transform: translate3d(0px, 0%, 3em);
+            }
+        }
+        &._active {
+            filter: drop-shadow(8px 7px 4px #000000);
+        }
+    }
+    @media (max-width: 1430px) {
+        .text_titel {
+            margin-left: 15vh;
+            text-align: left;
+            h1 {
+                font-size: 55px;
+            }
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+    @media (max-width: 570px) {
+        .text_titel {
+            margin-left: 5vh;
+            text-align: left;
+            h1 {
+                font-size: 36px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+        }
+    }
+}
