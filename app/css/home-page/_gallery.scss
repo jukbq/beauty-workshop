@@ -1,15 +1,12 @@
 #gallery {
-    width: 100vw;
-    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: relative;
     padding: 80px 0 80px 0;
-    .titel {
-        position: absolute;
-        top: -48%;
+    .section_titl {
+        margin-top: -448px;
         filter: drop-shadow(8px 7px 4px #000000);
     }
     .gallery_box {

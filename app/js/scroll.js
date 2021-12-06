@@ -32,7 +32,7 @@ $(window).scroll(function() {
     }
 
 
-    // Applying class '_active' to visible element
+    // Applying class '_active' to visible element with a class 'p2'
     function ani_repeat(el) {
         $(el).each(function() {
             if (is_shown($(this)) === true) {
@@ -43,7 +43,7 @@ $(window).scroll(function() {
 
 
     //Function of applying parlax 
-    //to elements with classes 'p_load', 'p1', 'p2'
+    //to elements with classes 'p_load', 'p1'
     let top = $(document).scrollTop()
     let speed, yPos;
 
@@ -52,9 +52,15 @@ $(window).scroll(function() {
         let yPos = (top * speed / 1000);
         $(el).attr('style', 'transition: all 0s ease 0s; transform: translateY(' + yPos + 'in)');
     }
+
+
+    //Finding elements with classes 'p_load', 'p1'
     $('.p_load, .p1 ').each(function(i, el) {
         scrool_el(el)
     })
+
+
+    //Finding elements with a class 'p2'
     $('.p2 ').each(function(i, el) {
         ani_repeat(el)
     })

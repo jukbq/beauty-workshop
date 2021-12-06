@@ -9,6 +9,7 @@ $('.staff').slick({
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 1000,
+    arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{

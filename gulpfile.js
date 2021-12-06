@@ -95,7 +95,7 @@ function startwatch() {
     watch(['app/**/*.js', '!app/**/*.min.js'], scriptMin);
     watch(['app/**/*.css', '!app/**/*.min.css'], stylesMin);
     watch(['app/**/*.css', '!app/**/*.min.css'], styles);
-    watch('app/**/*.html').on('change', browserSync.reload);
+    watch(['app/**/*.html'], html);
     watch('app/img/**/*.*', images);
 }
 
