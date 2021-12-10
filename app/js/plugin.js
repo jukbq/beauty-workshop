@@ -22,7 +22,7 @@ $('.staff').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
@@ -52,7 +52,7 @@ $('.skick_gallery').slick({
             breakpoint: 1400,
             settings: {
                 slidesToShow: 4,
-                slidesToScroll: 1,
+
                 infinite: true,
 
             }
@@ -61,14 +61,21 @@ $('.skick_gallery').slick({
             breakpoint: 1200,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 1
+
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+
+            }
+        },
+        {
+            breakpoint: 570,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+
             }
         }
         // You can unslick at a given breakpoint now by adding:

@@ -38,7 +38,13 @@ $(window).scroll(function() {
             if (is_shown($(this)) === true) {
                 $(this).addClass('_active')
             }
+            //On reaching the top of the screen, it removes the _active class
+            if ($(document).scrollTop() === 0) {
+                $(this).removeClass('_active')
+            };
         });
+
+
     }
 
 
@@ -55,13 +61,14 @@ $(window).scroll(function() {
 
 
     //Finding elements with classes 'p_load', 'p1'
-    $('.p_load, .p1 ').each(function(i, el) {
+    $('.p_load, .p1', ).each(function(i, el) {
         scrool_el(el)
     })
 
 
     //Finding elements with a class 'p2'
-    $('.p2 ').each(function(i, el) {
+    $('.p2').each(function(i, el) {
         ani_repeat(el)
     })
+
 });
